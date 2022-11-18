@@ -14,18 +14,18 @@ int main()
 	const int N = 6;
 	bool t;
 	string tmp;
-    string T[6] = {"Kacper","Ada","Kamila","Jarek","Danka","Michal"};
+    string T[6] = {"Kacper","Ada","Kamila","Jarek","Danka","Michal"};//tablica imion
     int W[6] = {{0,0,0,0,0,0}};
    licznik = 0;
     do
     {
-        p = rand() % 6;
+        p = rand() % 6; //losowanie indeksów
 
 
 
        t = true;
         for(i = 0; i < licznik; i++)
-            if(W[i] == p)
+            if(W[i] == p) 
             {
                 t = false;
                 break;
@@ -38,7 +38,7 @@ int main()
    } while(licznik < N);
 
 
-	for (int x=0; x <6; x++)
+	for (int x=0; x <6; x++)//tworzenie pliku
 	{
 	ofstream outfile (T[x]+".txt");
 	tmp = T[W[x]];
