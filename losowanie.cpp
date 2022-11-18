@@ -15,7 +15,7 @@ int main()
 	bool t;
 	string tmp;
     string T[6] = {"Kacper","Ada","Kamila","Jarek","Danka","Michal"};//tablica imion
-    int W[6] = {{0,0,0,0,0,0}};
+    int W[6] = {0,0,0,0,0,0};//tablica indeksów
    licznik = 0;
     do
     {
